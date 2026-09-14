@@ -1,0 +1,41 @@
+[hidden]{display:none!important}
+.combat #cameraMode{display:none}
+.combat .battle-map{line-height:1.4}
+@media(max-aspect-ratio:1/1){.combat #cameraMode{display:block;position:absolute;top:190px;left:50%;transform:translateX(-50%);background:#101e34cc;color:#caddf1;border:1px solid #526987;border-radius:5px;font-size:11px;padding:7px 15px;z-index:2}}
+.front-screen{position:fixed;inset:0;z-index:10;overflow:auto;background:linear-gradient(90deg,#050b18ee,#10182b99),url('night-sky.png') center/cover;color:#e6edf7;padding:clamp(24px,5vw,80px);font-family:Arial,sans-serif}
+.front-step{max-width:1100px;margin:auto}
+#landing{min-height:calc(100dvh - 160px);display:flex;flex-direction:column;justify-content:center;align-items:flex-start}
+.front-screen .kicker{letter-spacing:4px;color:#84c9ed;font-size:11px}
+.front-screen h1{font-size:clamp(36px,6vw,76px);line-height:1;margin:18px 0;letter-spacing:-2px;color:#f0f4ff}
+#landing h1{font-size:clamp(52px,9vw,120px);font-weight:900;letter-spacing:1px}
+.subtitle{font-size:clamp(18px,3vw,34px);letter-spacing:12px;color:#aebbd0;margin:0 0 28px}
+.lead{color:#c2d0e4;font-size:clamp(16px,2vw,22px);line-height:1.6;max-width:700px}
+.front-screen .primary,.combat dialog .primary{padding:16px 25px;border:1px solid #ff9a75;border-radius:6px;background:linear-gradient(120deg,#d3482b,#932114);color:#fff;font-weight:700;letter-spacing:1px}
+.front-screen .outline{color:#d2dff0;background:#131e30;border:1px solid #4b607e;padding:14px 22px;border-radius:6px}
+.front-screen .large{font-size:18px;min-width:270px;margin-top:25px;display:flex;justify-content:space-between}
+.fine{font-size:11px;color:#8092ad;margin-top:20px}
+.intro-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:35px 0}
+.intro-grid article,.briefing{background:#0a1427c9;border:1px solid #344760;border-radius:8px;padding:24px}
+.intro-grid b{font-size:11px;color:#84c9ed;letter-spacing:2px}
+.intro-grid h3{color:#e9f2ff;font-size:21px}
+.intro-grid p,.briefing p,.front-screen #mapDescription{color:#adbed5;font-size:14px;line-height:1.7}
+.front-actions{display:flex;justify-content:space-between;gap:16px;margin-top:24px}
+.front-screen h2{font-size:16px;color:#bdcde0;margin:28px 0 14px}
+.choice-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.choice-grid.maps{grid-template-columns:repeat(3,1fr)}
+.choice-grid button{display:flex;flex-direction:column;text-align:left;gap:12px;padding:20px;background:#0c182bee;border:1px solid #344760;border-radius:7px;color:#dbe8fa;cursor:pointer}
+.choice-grid button[aria-pressed=true]{border-color:#f47c4e;box-shadow:inset 0 0 0 1px #f47c4e;background:#302122e8}
+.choice-grid button b{font-size:17px}.choice-grid button>span{font-size:13px;color:#a8bdd6;line-height:1.5}
+.map-art{height:55px;width:100%;background:linear-gradient(145deg,#5183a0,#20354e);clip-path:polygon(0 10%,20% 25%,50% 95%,80% 35%,100% 0,100% 100%,0 100%)}
+.map-art.ridge{clip-path:polygon(0 90%,20% 75%,50% 0,80% 80%,100% 85%,100% 100%,0 100%)}
+.map-art.dunes{clip-path:polygon(0 60%,20% 20%,40% 65%,65% 30%,85% 75%,100% 35%,100% 100%,0 100%)}
+.briefing{padding:18px 24px}.briefing p{margin:8px 0}.briefing label{font-size:13px;color:#c7d5e8}.briefing input{accent-color:#f47c4e}
+.pause-options{display:grid;gap:12px}.combat dialog{max-height:88dvh;overflow:auto}.combat #guide{width:min(760px,92vw)}.combat .guide-list h3{color:#e1ebfa;margin:24px 0 8px}.combat .guide-list p{line-height:1.7;font-size:14px}
+.combat .battlefield{position:relative;min-height:0}.combat canvas{aspect-ratio:auto;object-fit:contain}
+.battle-map{position:absolute;left:20px;top:126px;color:#b5c7de;font-size:11px;letter-spacing:1px}
+.combat .game-shell{grid-template-rows:minmax(0,1fr) 128px}
+.combat .control-block,.combat .weapon-panel,.combat .move-panel{min-width:0}
+.combat .weapon-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+@media(max-width:760px){.front-screen{padding:24px 20px}#landing{min-height:calc(100dvh - 48px)}.intro-grid{grid-template-columns:1fr;gap:12px;margin:22px 0}.intro-grid article{padding:18px}.intro-grid h3{margin:12px 0}.choice-grid button{padding:14px}.choice-grid.maps{grid-template-columns:1fr}.maps button{display:grid;grid-template-columns:75px 1fr}.maps button .map-art{grid-row:1/3}.maps button>span:last-child{grid-column:2}.front-screen h1{letter-spacing:-1px}.battle-map{left:10px;top:108px;font-size:9px}}
+@media(max-width:600px){.combat .game-shell{grid-template-rows:minmax(0,1fr) 190px}.combat .hud{width:108px}.combat .hud strong{font-size:12px}.combat .hud>span:last-child{font-size:12px}.combat .utility{top:80px}.battle-map{top:84px;max-width:100px}.combat .move-panel label{flex-wrap:wrap}.choice-grid{grid-template-columns:1fr}.front-actions{flex-wrap:wrap}.front-actions>*{flex:1}.combat #feedback{bottom:4px}.combat #portal span{font-size:7px}}
+@media(max-height:500px) and (min-width:601px){.combat .game-shell{grid-template-rows:minmax(0,1fr) 100px}.combat .controls{padding:5px;gap:5px}.combat .hud{top:5px;padding:7px 10px;width:155px}.combat .hud strong{font-size:15px;margin-bottom:4px}.combat .health{height:8px}.combat .hud>span:last-child{font-size:12px}.combat .utility{top:75px}.battle-map{top:75px}.combat .match-info{top:8px;gap:5px}.combat .move-panel,.combat .control-block,.combat .weapon-panel{padding:6px}.combat .controls label{font-size:11px}.combat .control-block output{font-size:23px}.combat #fire{font-size:26px}}
