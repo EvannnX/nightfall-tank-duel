@@ -254,7 +254,7 @@ The student reviewed the course's three-session structure and asked what was mis
 **Time:** 2026-09-20 (time of current work session)
 **Development Stage:** Three-session submission completion
 **Current Goal:** Make the repository explicitly cover every deliverable across Sessions 1, 2, and 3.
-**Git Tag / Commit:** Pending current completion commit
+**Git Tag / Commit:** `b9af5d8`
 
 ### Student Prompt
 Review all three course sessions, identify missing material, add it, and ensure the submission is complete.
